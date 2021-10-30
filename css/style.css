@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Nunito&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Zen+Kurenaido&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Fruktur&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Niconne&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Bangers&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Rampart+One&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Monoton');
 
 body {
   color: #444;
@@ -151,6 +156,90 @@ h2{
 .button1:hover {
   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
+
+.grad{
+  background: linear-gradient(
+    to right,
+    hsl(358 59% 49%),
+    hsl(247 59% 49%)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+}
+.grad h3{
+  font-size: 64px;
+  font-family: 'Fruktur', serif;
+}
+
+.red{
+  background-color: #d52e3f;;
+}
+
+.layered{
+		  font-size: 96px;
+	    text-align: center;
+	    color: #fcedd8;
+      margin: auto;
+	   	font-family: 'Niconne', cursive;
+	    font-weight: 128px;
+      text-shadow: 2px 2px 0px #eb452b,
+                  4px 4px 0px #efa032,
+                  6px 6px 0px #46b59b,
+                  8px 8px 0px #017e7f,
+                  10px 10px 0px #052939;
+}
+
+.neon p{
+  text-align:center;
+  font-size:7em;
+  margin:20px 0 20px 0;
+}
+.neon a{
+  text-decoration:none;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
+  color:#FF1177;
+  font-family:"Rampart One";
+}
+.neon a:hover{
+  -webkit-animation: neon1 1.5s ease-in-out infinite alternate;
+  -moz-animation: neon1 1.5s ease-in-out infinite alternate;
+  animation: neon1 1.5s ease-in-out infinite alternate;
+  color: #fff;
+}
+
+@-webkit-keyframes neon1 {
+  from {
+    text-shadow: 0 0 10px #fff,
+               0 0 20px  #fff,
+               0 0 30px  #fff,
+               0 0 40px  #FF1177,
+               0 0 70px  #FF1177,
+               0 0 80px  #FF1177,
+               0 0 100px #FF1177,
+               0 0 150px #FF1177;
+  }
+  to {
+    text-shadow: 0 0 5px #fff,
+               0 0 10px #fff,
+               0 0 15px #fff,
+               0 0 20px #FF1177,
+               0 0 35px #FF1177,
+               0 0 40px #FF1177,
+               0 0 50px #FF1177,
+               0 0 75px #FF1177;
+  }
+}
+
+.mono{
+  font-family: "Monoton", Helvetica, serif;
+  font-size: 64px;
+  text-align: center;
+  color: gold;
+}
+
 @media (max-width: 768px) {
 	.grid {
 		grid-template-columns: repeat(3, 1fr);
